@@ -1,3 +1,5 @@
+USE DataWarehouse;
+GO
 /*
 ===============================================================================
 Stored Procedure: Load Bronze Layer (Source -> Bronze)
@@ -16,9 +18,6 @@ Usage Example:
     EXEC bronze.load_bronze;
 ===============================================================================
 */
-
-USE DataWarehouse;
-GO
   
 CREATE OR ALTER PROCEDURE bronze.load_bronze AS
 BEGIN
